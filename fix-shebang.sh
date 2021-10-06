@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Which directory should I search to update old shell shebang strings in files?"
+echo "Which directory should I search to update old shell shebang's in?"
 read -re "directory"
 echo "Searching and updating files in $directory"
 grep -rIl --word-regexp "#\!\/bin/sh" "$directory" | while read FILE
