@@ -6,16 +6,19 @@
 
 >Install:
 >>```bash
->>  chmod a+x sh2bash
->>  mv sh2bash ~/.bin/ #or /usr/bin/ #or ~/.local/usr/bin/
+>>  chmod a+x sh2bash.sh
+>>  cd sh2bash
+>>  sudo -S mv sh2bash.sh ~/.bin/sh2bash #or /usr/bin/sh2bash #or ~/.local/usr/bin/sh2bash
 >>  sh2bash
+>>  #or with elevated privilages
+>>  sudo -S sh2bash
 >>```
 >Standalone:
 >>```bash
->>bash sh2bash
+>>  bash sh2bash.sh
 >>```
->With Evelvated Privileges
+>Standalone with evelvated privileges
 >>```bash
->>sudo bash sh2bash
+>>  sudo bash sh2bash.sh
 >>```
 When prompted by the script, enter the full path to the directory where you would find files with #!/bin/sh: $HOME/Foo/Bar or /foo or .bar
